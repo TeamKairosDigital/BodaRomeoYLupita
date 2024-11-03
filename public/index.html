@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romeo & Lupita</title>
+  <link rel="shortcut icon" href="images/mensaje.png" type="image/x-icon">
+  <!-- PrimeFlex CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/primeflex@3.1.0/primeflex.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- google-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Modal con PrimeFlex -->
+  <div id="welcomeModal" class="modal hidden">
+      <div class="modal-content p-3">
+        <h2>Felicidades, has sido invitado a nuestra boda</h2>
+          <button id="startButton" style="background-color: #195f99; color: #ffffff; border-radius: 20px;" class="px-3 py-2 mt-5 font-bold">Ingresar</button>
+      </div>
+  </div>
+
+  <div id="contenido" class="xl:w-8 xl:mx-auto">
+    <!-- Botón flotante de reproducir/pausar -->
+    <div id="playButton"><i class="fa-solid fa-circle-pause"></i></div>
+
+    <!-- Mariposas -->
+    <div class="stage">
+      <div class="mariposa">
+        <div class="mariposa-turn">
+          <div class="mariposa-flutter"></div>
+        </div>
+      </div>
+    
+      <div class="mariposa">
+        <div class="mariposa-turn">
+          <div class="mariposa-flutter"></div>
+        </div>
+      </div>
+    
+      <div class="mariposa">
+        <div class="mariposa-turn">
+          <div class="mariposa-flutter"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTRO -->
+    <div class="relative justify-content-center text-center overflow-hidden">
+
+      <!-- Texto superpuesto -->
+      <div class="absolute z-2 w-full" style="top: 45%; left: 50%; transform: translate(-50%, -30%);">
+          <img src="images/nombres.png" class="w-9 lg:w-30rem" alt="nombres" data-aos="zoom-in-down" data-aos-duration="800">
+          <p class="w-7 lg:w-5 my-5 lg:my-7 mx-auto lg:text-4xl" data-aos="zoom-out" data-aos-duration="800">¡Que ponga él su izquierda
+            bajo mi cabeza, y que con su
+            derecha me abrace!</p>
+            <p class="font-bold lg:text-4xl" data-aos="fade-up" data-aos-duration="800">Cantares8:3(DHH)</p>
+      </div>
+
+      <!-- imagenes de fondo -->
+      <div class="grid">
+        <div class="col-12 h-20rem grid lg:h-30rem">
+          <div class="col-4" style="text-align: left;" data-aos="fade-right"  data-aos-duration="800">
+            <img src="images/flor1.png" class="w-12rem lg:w-30rem -mt-4 lg:-mt-8 -ml-5" alt="Flor de fondo">
+          </div>
+          <div class="col-4"></div>
+          <div class="col-4" style="text-align: right;" data-aos="fade-left"  data-aos-duration="800">
+              <img src="images/pincelada1.png" class="w-10rem lg:w-25rem -mr-5 lg:-mt-8" alt="Pincelada de fondo">
+              <img src="images/mariposa.png" alt="" class="w-8rem absolute -ml-5 -mt-7 top-50 left-0">
+          </div>
+        </div>
+        <div class="col-12 h-15rem grid lg:h-30rem">
+          <div class="col-3" style="text-align: left;" data-aos="fade-right"  data-aos-duration="800">
+            <img src="images/hojas.png" class="w-10rem lg:w-30rem mt-4 -ml-8" alt="hojas de fondo">
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3" data-aos="fade-left"  data-aos-duration="800">
+              <img src="images/hojas_doradas.png" class="w-10rem lg:w-30rem mt-8 -mr-8" alt="hojas doradas de fondo">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- ASISTENCIA -->
+    <div class="relative -mt-5 justify-content-center text-center overflow-hidden">
+
+      <!-- Texto superpuesto -->
+      <div class="absolute z-2 w-full" style="top: 15%; left: 50%; transform: translate(-50%, -30%);">
+          <div data-aos="zoom-in-down" data-aos-duration="800">
+            <p class="w-5 lg:w-5 my-5 lg:my-7 mx-auto lg:text-4xl">Nos encantaría que nos acompañen en esta fecha tan especial:</p>
+          </div>
+          <div class="flex justify-content-center my-5 mx-auto" style="color: #195f99">
+            <p class="mr-3 text-2xl font-semibold" data-aos="flip-up" data-aos-duration="800">23</p>
+            <p class="text-2xl font-semibold pleca" data-aos="flip-up" data-aos-duration="800">NOV</p>
+            <p class="ml-3 text-2xl font-semibold" data-aos="flip-up" data-aos-duration="800">24</p>
+          </div>
+          <div data-aos="zoom-out" data-aos-duration="800">
+            <a href="https://wa.me/+52?text=Hola, Quiero confirmar mi asistencia" style="background-color: #195f99; color: #ffffff; text-decoration: none; border-radius: 20px;" class="px-3 py-2 font-bold">confirmar asistencia</a>
+          </div>
+      </div>
+
+      <!-- imagenes de fondo -->
+      <div class="grid">
+        <div class="col-12 h-10rem grid lg:h-30rem">
+          <div class="col-4" style="text-align: center;" data-aos="zoom-in-right" data-aos-duration="800">
+            <img src="images/mariposa_dorada.png" class="w-7rem lg:w-30rem lg:-mt-8 -ml-5" alt="Flor de fondo">
+          </div>
+        </div>
+        <div class="col-12 h-auto grid lg:h-30rem">
+          <div class="col-3" style="text-align: left;" data-aos="zoom-in-left" data-aos-duration="800">
+            <img src="images/flor_blanca.png" class="w-14rem lg:w-30rem -ml-8" style="rotate: 50deg;" alt="hojas de fondo">
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3" data-aos="zoom-in-right" data-aos-duration="800">
+              <img src="images/flor2.png" class="w-15rem lg:w-30rem " style="rotate: -40deg;" alt="hojas doradas de fondo">
+          </div>
+        </div>
+      </div>
+
+      <div class="py-6 -mt-8" style="background-color: #195f99;">
+        <p class="w-5 lg:w-5 lg:my-7 mx-auto lg:text-4xl" style="color: #ffffff;" data-aos="flip-down" data-aos-duration="800">Ministro que oficiará la ceremonia religiosa:</p> 
+        <p class="font-bold" style="color: #ffffff;" data-aos="flip-down" data-aos-duration="800">DR. BYRON R. WALTER PADILLA</p>
+        <p style="color: #ffffff;" data-aos="flip-down" data-aos-duration="800">SIERVO DE DIOS</p>
+      </div>
+      
+    </div>
+
+    <!-- PADRES -->
+    <div class="relative justify-content-center text-center overflow-hidden">
+
+      <!-- Texto superpuesto -->
+      <div class="absolute z-2 w-full" style="top: 15%; left: 50%; transform: translate(-50%, -30%);">
+  
+        <div class="mt-8" data-aos="fade-right" data-aos-duration="700">
+          <p class="lg:text-4xl mx-auto font-bold">Papás novia:</p>
+          <div class="flex justify-content-center">
+            <p class="lg:text-4xl mt-1">José Molina Mendoza</p>
+            <img src="images/cruz.png" alt="" class="w-1rem ml-2">
+          </div>
+            <p class="lg:text-4xl">Guadalupe Méndez Jiménez</p>
+        </div>
+
+        <div class="mt-8" data-aos="fade-left" data-aos-duration="700">
+          <p class="lg:text-4xl mx-auto font-bold">Papás novio:</p>
+          <div class="flex justify-content-center">
+            <p class="lg:text-4xl mt-1">Concepción De Los Santos Simón</p>
+            <img src="images/cruz.png" alt="" class="w-1rem ml-2">
+          </div>
+          <div class="flex justify-content-center">
+            <p class="lg:text-4xl mt-1">Felícitga Montoya Álvarez</p>
+            <img src="images/cruz.png" alt="" class="w-1rem ml-2">
+          </div>
+        </div>
+      </div>
+
+      <!-- imagenes de fondo -->
+      <div class="grid">
+        <div class="col-12 h-auto grid lg:h-30rem">
+          <div class="col-3" data-aos="zoom-in-right" data-aos-duration="800">
+            <img src="images/hojas.png" class="w-10rem lg:w-30rem lg:-mt-8 -ml-8 mt-2" alt="Flor de fondo">
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3" data-aos="zoom-in-left" data-aos-duration="800">
+            <img src="images/hojas_doradas.png" class="w-15rem lg:w-30rem mt-4" alt="hojas doradas de fondo">
+        </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- PADRINOS -->
+    <div class="relative justify-content-center text-center overflow-hidden">
+
+      <!-- imagenes de fondo -->
+      <div class="grid w-full absolute z-2">
+        <div class="col-12 mt-5 h-8rem lg:h-30rem" data-aos="fade-down-right" data-aos-duration="800">
+          <img src="images/mariposa_dorada.png" class="w-6rem lg:w-30rem -mt-5 lg:-mt-8 absolute left-0" alt="Flor de fondo">
+        </div>
+        <div class="col-12 grid w-full h-auto lg:h-30rem">
+            <div class="col-10"></div>
+            <div class="col-2" style="text-align: right;" data-aos="fade-down-left" data-aos-duration="800">
+              <img src="images/flor2.png" class="w-10rem lg:w-30rem lg:-mt-8 mt-2 -mr-8" alt="Flor de fondo" style="rotate: -50deg;">
+            </div>
+        </div>
+        <div class="col-12 grid w-full h-auto lg:h-30rem">
+            <div class="col-2 -ml-6 -mt-5" style="text-align: left;" data-aos="fade-down-right" data-aos-duration="800">
+              <img src="images/flor_blanca.png" class="w-13rem lg:w-30rem -ml-8 -mt-8" alt="Flor de fondo" style="rotate: 50deg;">
+            </div>
+            <div class="col-10"></div>
+        </div>
+      </div>
+
+      <!-- Texto superpuesto -->
+      <div class="h-auto" >
+        <div class="pt-6"></div>
+        <div class="py-3" style="background-color: #8196c0;">
+          <div class="m-y3" style="color: #ffffff;" data-aos="zoom-out" data-aos-duration="800">
+            <p class="lg:text-4xl mx-auto font-bold">Padrino de Anillos:</p>
+            <p class="lg:text-4xl mx-auto">Sr. Ricardo López y Esposa Sra.</p>
+            <p class="lg:text-4xl mx-auto">Anita De los Santos Montoya.</p>
+          </div>
+        </div>
+
+        <div class="py-3" style="background-color: #8196c0;">
+          <div class="my-3" style="color: #ffffff;" data-aos="zoom-up" data-aos-duration="800">
+            <p class="lg:text-4xl mx-auto font-bold">Padrinos de Arras:</p>
+            <p class="lg:text-4xl mx-auto">Dr. César Jesús Segura González y</p>
+            <p class="lg:text-4xl mx-auto">Dra. Josefina Molina Méndez.</p>
+          </div>
+        </div>
+
+        <div class="py-3" style="background-color: #abb9d5;">
+          <div class="my-3" style="color: #ffffff;" data-aos="zoom-out" data-aos-duration="800">
+            <p class="lg:text-4xl mx-auto font-bold">Padrinos de Manto:</p>
+            <p class="lg:text-4xl mx-auto">Ap. Juan de Dios Santiago Velázquez y</p>
+            <p class="lg:text-4xl mx-auto"> Ap. Verónica Fabiola Gutiérrez Moreno.</p>
+          </div>
+        </div>
+
+        <div class="py-3" style="background-color: #abb9d5;">
+          <div class="my-3" style="color: #ffffff;" data-aos="zoom-up" data-aos-duration="800">
+            <p class="lg:text-4xl mx-auto font-bold">Madrina de Biblia:</p>
+            <p class="lg:text-4xl mx-auto">Ap. María Alma Gutiérrez Coutiño.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- UBICACIÓN -->
+    <div class="relative mb-3 justify-content-center text-center overflow-hidden">
+
+      <!-- Texto superpuesto -->
+      <div class="absolute mt-4 z-2 w-full">
+          <div data-aos="zoom-in" data-aos-duration="800">
+            <img src="images/icono_ubicacion.png" alt="" class="w-3rem mt-5">
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="800">
+            <p class="w-7 lg:w-5 my-5 lg:my-7 mx-auto lg:text-4xl">Acompáñanos en <b>Hotel Casa Kolping</b> ubicado en Av. Jesús Cancino Casahonda 2624 Las Arboledas, Arboledas,  Tuxtla Gtz. Chiapas.</p>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-duration="800">
+            <a href="https://maps.app.goo.gl/hsXPWpYRZDKJjJRr6" style="background-color: #195f99; color: #ffffff; text-decoration: none; border-radius: 20px;" class="px-5 py-2 font-bold">Ver ubicación</a>
+          </div>
+      </div>
+
+      <!-- imagenes de fondo -->
+      <div class="grid">
+        <div class="col-12 grid lg:h-30rem">
+          <div class="col-3" style="text-align: center;" data-aos="fade-up-right" data-aos-duration="800">
+            <img src="images/hojas.png" class="w-10rem lg:w-30rem lg:-mt-8 -ml-5" alt="Flor de fondo">
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3" style="text-align: left;" data-aos="fade-up-left" data-aos-duration="800">
+            <img src="images/hojas_doradas.png" class="w-14rem lg:w-30rem mt-1" style="rotate: 10deg;" alt="hojas de fondo">
+          </div>
+        </div>
+        <div class="col-12 lg:h-30rem">
+          <div class="col-3" data-aos="fade-up-right" data-aos-duration="800">
+              <img src="images/mariposa_dorada.png" class="w-5rem lg:w-30rem " alt="hojas doradas de fondo">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- QR -->
+    <div class="relative justify-content-center text-center overflow-hidden">
+
+      <!-- Texto superpuesto -->
+      <div class="absolute grid z-2 w-full">
+          <div data-aos="zoom-in-down" data-aos-duration="800">
+            <p class="w-7 lg:w-5 lg:my-7 mx-auto lg:text-4xl ">Al finalizar el evento comparte con nosotros tus mejores recuerdos subiéndolas en este link:</p>
+          </div>
+          <div class="mb-4" data-aos="zoom-in-up" data-aos-duration="800">
+            <img src="images/QrDrive.png" alt="QR" class=" w-3 mt-5">
+          </div>
+          <div class="mx-auto" data-aos="zoom-in" data-aos-duration="800">
+            <a href="https://drive.google.com/drive/folders/1Blj42OvvKQgB1TfG-uvlnAkto8BES9y1?usp=sharing" style="background-color: #195f99; color: #ffffff; text-decoration: none; border-radius: 20px;" class="px-5 py-2 font-bold">Ver álbum</a>
+          </div>
+      </div>
+
+      <!-- imagenes de fondo -->
+      <div class="grid">
+        <div class="col-12 grid lg:h-30rem">
+          <div class="col-3 mt-6 lg:h-30rem" data-aos="fade-right" data-aos-duration="800">
+            <img src="images/flor_blanca.png" class="w-11rem lg:w-30rem -ml-6 mt-8" style="rotate: 40deg;" alt="hojas doradas de fondo">
+          </div>
+          <div class="col-6"></div>
+          <div class="col-3" data-aos="fade-left" data-aos-duration="800">
+            <img src="images/flor2.png" class="w-10rem lg:w-30rem -mr-8 mt-3" style="rotate: -50deg;" alt="hojas de fondo">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- FOOTER -->
+    <div class="relative justify-content-center text-center overflow-hidden">
+
+      <!-- Texto superpuesto -->
+      <div class="absolute mt-2 z-2 w-full">
+        <div class="col-12 grid" data-aos="zoom-out" data-aos-duration="800">
+          <div class="col-8"></div>
+          <img src="images/mariposa.png" alt="mariposa" class="col-4 -ml-4 -mb-5 w-8rem">
+        </div>
+        <div class="col-12" data-aos="zoom-out" data-aos="zoom-in" data-aos-duration="800">
+          <img src="images/nombres.png" alt="nombres" class="w-9">
+        </div>
+      </div>
+
+      <!-- imagenes de fondo -->
+      <div class="grid h-27rem">
+        <div class="col-12 grid lg:h-30rem">
+          <div class="col-4 lg:h-30rem relative">
+            <img src="images/pincelada2.png" class="w-12rem h-30rem lg:w-30rem -mb-2 -ml-2 absolute bottom-0 left-0" alt="hojas doradas de fondo"  data-aos="zoom-in-down" data-aos="zoom-in" data-aos-duration="800">
+            <img src="images/flor_blanca.png" class="w-12rem lg:w-30rem -mb-2 -ml-6 absolute bottom-0 left-0" style="rotate: 40deg;" alt="hojas doradas de fondo"  data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="800">
+          </div>
+          <div class="col-4 lg:h-30rem relative" data-aos="zoom-out-up" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+            <img src="images/flor_azul.png" alt="flor_azul" class="w-12rem -mb-4 absolute bottom-0 left-0">
+          </div>
+          <div class="col-4 lg:h-30rem relative" data-aos="zoom-out-left" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+            <img src="images/flor2.png" class="w-12rem lg:w-30rem -mb-6 -mr-5 absolute bottom-0 left-0" style="rotate: -50deg;" alt="hojas de fondo">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <audio id="background-music" preload="auto" loop>
+    <source src="assets/TIEMPO_DE_AMAR_Lorena_y_Humberto.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="js/simplyCountdown.min.js"></script>
+  <script src="js/countdown.js"></script>
+
+</body>
+
+</html>
