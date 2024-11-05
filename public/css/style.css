@@ -12,10 +12,29 @@
 }
 
 body{
-	background-image: url('images/fondo_horizontal.png');
-	font-family: "Montserrat", sans-serif;
+	background-image: url('../images/fondo_horizontal.png');
+  font-family: "Montserrat", sans-serif;
 	color: #545454;
-	font-size: .9rem;
+	font-size: 1.1rem;
+}
+
+.textoCursiva{
+  font-family: "Corinthia", cursive;
+}
+
+
+.vertical-line {
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100px; /* Ajusta la altura según lo necesites */
+  background-color: #8196c0; /* Color de la línea */
+}
+
+.gleriaStyle a img{
+  border-radius: 10px;
 }
 
 /* ? ----- PORTADA ----- */
@@ -46,9 +65,8 @@ body{
 }
 
 .simply-section {
-	background: #fff;
-	width: 180px;
-	height: 180px;
+	width: 50px;
+	height: 80px;
 	margin: 0 20px;
 	border-radius: 5px;
 	display: flex;
@@ -58,13 +76,13 @@ body{
 
 .simply-amount {
 	display: block;
-	font-size: 50px;
+	font-size: 25px;
 	font-weight: 700;
 }
 
 .simply-word {
 	font-weight: 300;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 /* ? ---------------------------- */
@@ -181,7 +199,7 @@ body{
   position: relative;
   top: 0;
   margin: 0 auto;
-  background: url("images/butterfly-body.png");
+  background: url("../images/butterfly-body.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -205,14 +223,14 @@ body{
   }
   
   &::before {
-    background-image: url("images/butterfly-wing.png");
+    background-image: url("../images/butterfly-wing.png");
     transform-origin: 0% 50%;
     animation: flutter-r 0.3s infinite ease-out;
     left: 55%;
   }
   
   &::after {
-    background-image: url("images/butterfly-wing-l.png");
+    background-image: url("../images/butterfly-wing-l.png");
     transform-origin: 100% 50%;
     animation: flutter-l 0.3s infinite ease-out;
     right: 55%;
